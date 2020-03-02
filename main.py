@@ -184,7 +184,7 @@ class Pacman(pygame.sprite.Sprite):
     def flip(self, time: float, field):
         if self.rage:
             self.time += time
-        if self.time > 3.5:
+        if self.time > 5:
             self.rage = False
             self.time = 0
         cell_coords = tuple(int((self.coords[i]) // 64 * int((self.coords[i] + 32) > 0)) for i in range(2))
